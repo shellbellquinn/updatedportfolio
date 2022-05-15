@@ -115,9 +115,13 @@ h4 {
   font-size: 0.875rem;
 }
 
-p {
+p, figcaption {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+}
+
+.click {
+  font-size: small;
 }
 
 @media screen and (min-width: 800px) {
@@ -151,7 +155,7 @@ p {
 
 /*  global classes */
 
-.btn {
+.btn, .fbtn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
@@ -168,7 +172,7 @@ p {
   border-radius: var(--radius);
 }
 
-.btn:hover {
+.btn:hover, .fbtn:hover{
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
@@ -381,7 +385,7 @@ Sidebar
   border: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: #bb2525;
+  color: var(--clr-primary-10);
   cursor: pointer;
 }
 
@@ -712,6 +716,7 @@ Connect
   position: relative;
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
+  background-color: var(--clr-white);
 }
 
 .video-container {
@@ -741,6 +746,7 @@ Connect
   display: grid;
   place-items: center;
 }
+
 
 .video-banner .section-title {
   margin-bottom: 2rem;
@@ -1096,3 +1102,29 @@ Projects
   transition: var(--transition);
   justify-self: end;
 }
+
+/*
+=============== 
+Form
+===============
+*/
+
+.contact-form input, .message{
+  width: 100%;
+  display:block;
+  height: 50px;
+  margin:5px 0;
+  padding: 10px;
+  background: var(--clr-grey-10);
+  outline: none;
+}
+.message{
+  margin-bottom:30px;
+  height: 200px;
+}
+.contact-form .name{
+  display: flex;
+  justify-content: space-between;
+}
+
+
