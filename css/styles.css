@@ -385,7 +385,7 @@ Sidebar
   border: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: var(--clr-primary-10);
+  color: var(--clr-primary-10));
   cursor: pointer;
 }
 
@@ -1126,5 +1126,3 @@ Form
   display: flex;
   justify-content: space-between;
 }
-
-
