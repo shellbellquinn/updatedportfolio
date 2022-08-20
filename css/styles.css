@@ -170,6 +170,7 @@ p, figcaption {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+  margin: 5px
 }
 
 .btn:hover, .fbtn:hover{
@@ -186,6 +187,7 @@ p, figcaption {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -405,7 +407,7 @@ Hero
 }
 
 .hero-img {
-  display: none;
+  display: grid;
 }
 
 .hero {
@@ -433,6 +435,15 @@ Hero
 }
 
 /* later in the media query */
+@media only screen and (max-width: 992px) {
+
+.hero-img {
+  display: grid;
+  left: -3rem;
+  max-width: 80%;
+  padding: 2em;
+}
+}
 
 @media screen and (min-width: 992px) {
   .hero-center {
@@ -659,7 +670,7 @@ Projects
 @media screen and (min-width: 676px) {
   .projects-center {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
@@ -1125,4 +1136,24 @@ Form
 .contact-form .name{
   display: flex;
   justify-content: space-between;
+}
+
+/*
+=============== 
+sort/filter
+===============
+*/
+
+
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
 }

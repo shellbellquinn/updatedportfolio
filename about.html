@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michelle Quinn || About</title>
@@ -9,8 +7,8 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
 <body>
+
    <!-- navbar -->
    <nav class="nav" id="nav">
     <div class="nav-center">
@@ -24,43 +22,178 @@
       <!-- nav links -->
       <ul class="nav-links">
         <li><a href="index.html">home</a></li>
-        <!-- <li><a href="about.html">about</a></li> -->
+        <li><a href="about.html">about</a></li>
         <li><a href="projects.html">projects</a></li>
         <li><a href="contact.html">contact</a></li>
       </ul>
     </div>
   </nav>
   <!-- end of navbar -->
-  <!-- sidebar -->
-  <aside class="sidebar" id="sidebar">
-    <div>
-      <button id="close-btn" class="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-      <ul class="sidebar-links">
-        <li><a href="index.html">home</a></li>
-        <!-- <li><a href="about.html">about</a></li> -->
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </div>
-  </aside>
-  <!-- end of sidebar -->
 
-  <section class="section single-page">
-    <div class="section-title">
-      <h1>about me</h1>
-      <div class="underline"></div>
-    </div>
-    <div class="section-center page-info">
-      <p>
-        Hello, I am a life-long learner with a passion for problem solving. Highly creative, commercially savvy and
-        technically literate- I combine a range of digital, creative, and critical thinking skills. My background and
-        expertise are in marketing, front-end developement, strategic planning, and visual communication.
-      </p>    
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <header class="projects-hero">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>More About Me</h1>
+        <div class="underline"></div>
+      </div>
+    </header>
+
+
+        <!-- section title -->
+        <div class="section-center">
+          <h2>Photo Albums</h2>
+          <p>
+            I believe in the power of visual storytelling. It was one of the first things that drew me to Visual Communications, User Experience Design, and Frontend Development. I think it is fitting to tell the story of who I am through photo albums of my life, hobbies, and passions. Afterall, they say a picture is worth a thousand words, and as a visual learner I tend to agree.
+          </p>
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('art')"> Art</button>
+            <button class="btn" onclick="filterSelection('sailing')"> Sailing</button>
+            <button class="btn" onclick="filterSelection('family')"> Family and Friends</button>
+            <button class="btn" onclick="filterSelection('travel')"> Travel</button>
+          </div>
+        </div>
+        <!-- end of section title -->
+  
+
+<div class="section-center projects-center container">
+
+  <div class="filterDiv art">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv travel family">
+    <article class="project">
+      <img src="./images/project-2.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
     
+  </div>
+  <div class="filterDiv art">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+    
+  </div>
+  <div class="filterDiv travel">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+    
+  </div>
+  <div class="filterDiv art sailing"> 
+    <article class="project">
+    <img src="./images/project-1.jpeg" alt="" class="project-img" />
+    <div class="project-info">
+      <h4>Title</h4>
+      <p>caption</p>
     </div>
-  </section>
+  </article></div>
+  <div class="filterDiv travel">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv sailing"> 
+    <article class="project">
+    <img src="./images/project-1.jpeg" alt="" class="project-img" />
+    <div class="project-info">
+      <h4>Title</h4>
+      <p>caption</p>
+    </div>
+  </article></div>
+  <div class="filterDiv sailing">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv family">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv family sailing">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv family">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv family">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+  <div class="filterDiv sailing">
+    <article class="project">
+      <img src="./images/project-1.jpeg" alt="" class="project-img" />
+      <div class="project-info">
+        <h4>Title</h4>
+        <p>caption</p>
+      </div>
+    </article>
+  </div>
+</div>
+
  <!-- footer -->
  <footer class="footer">
   <ul class="social-icons">
@@ -100,7 +233,13 @@
     <!-- end of single item -->
   </ul>
 </footer>
-  <script src="./js/app.js"></script>
-</body>
 
+<script src="./js/app.js"></script>
+<script src="./js/gallery.js"></script>
+
+
+
+
+</body>
 </html>
+
