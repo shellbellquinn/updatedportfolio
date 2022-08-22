@@ -170,7 +170,7 @@ p, figcaption {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
-  margin: 5px
+  margin: 10px
 }
 
 .btn:hover, .fbtn:hover{
