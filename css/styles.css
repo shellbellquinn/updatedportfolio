@@ -1144,6 +1144,10 @@ sort/filter
 ===============
 */
 
+#myBtnContainer {
+  margin: 10px;
+}
+
 .filterDiv {
   display: none;
 }
