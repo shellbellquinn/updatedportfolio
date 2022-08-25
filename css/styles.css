@@ -159,7 +159,7 @@ p, figcaption {
 
 /*  global classes */
 
-.btn .fbtn {
+.btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
@@ -177,7 +177,7 @@ p, figcaption {
   margin: 10px
 }
 
-.btn:hover, .fbtn:hover{
+.btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
