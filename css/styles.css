@@ -155,7 +155,7 @@ p, figcaption {
 
 /*  global classes */
 
-.btn, .fbtn {
+.btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
@@ -173,7 +173,7 @@ p, figcaption {
   margin: 10px
 }
 
-.btn:hover, .fbtn:hover{
+.btn:hover{
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
@@ -231,7 +231,7 @@ Navbar
   -webkit-box-align: center;
   align-items: center;
   -webkit-transition: var(--transition);
-  transition: var(--transition);
+  transition: var(--transition); 
   padding: 1rem;
 }
 
@@ -281,8 +281,7 @@ Navbar
     color: var(--clr-grey-1);
     font-weight: bold;
     letter-spacing: var(--spacing);
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+
   }
 
   .nav-links a:hover {
@@ -327,9 +326,6 @@ Sidebar
   z-index: 4;
   display: grid;
   place-items: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  /* add later */
   -webkit-transform: translate(-100%);
   transform: translate(-100%);
 }
@@ -347,8 +343,6 @@ Sidebar
 .sidebar-links a {
   font-size: 2rem;
   text-transform: capitalize;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
   color: var(--clr-grey-5);
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -367,16 +361,6 @@ Sidebar
   justify-items: center;
 }
 
-.social-icon {
-  font-size: 1.5rem;
-  color: var(--clr-grey-1);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.social-icon:hover {
-  color: var(--clr-primary-5);
-}
 
 .close-btn {
   position: absolute;
@@ -385,8 +369,6 @@ Sidebar
   font-size: 3rem;
   background: transparent;
   border: none;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
   color: var(--clr-primary-10);
   cursor: pointer;
 }
@@ -532,10 +514,7 @@ About
 Services
 ===============
 */
-/* talk about small screen 
-without grid 
- different setup */
-/* bg-grey in globals */
+
 
 .service {
   background: var(--clr-white);
@@ -543,8 +522,7 @@ without grid
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+
 }
 
 .service .service-icon {
@@ -559,10 +537,6 @@ without grid
   transition: var(--transition);
 }
 
-.service p {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
 
 .service:hover {
   background: var(--clr-primary-5);
@@ -621,7 +595,7 @@ Projects
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: var(--transition);
-  transition: var(--transition);
+  transition: var(--transition); 
   opacity: 0;
 }
 
@@ -635,8 +609,6 @@ Projects
 }
 
 .project-img {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
   border-radius: var(--radius);
   height: 15rem;
   -o-object-fit: cover;
@@ -760,7 +732,7 @@ Gallery
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: var(--transition);
-  transition: var(--transition);
+  transition: var(--transition); 
   opacity: 0;
 }
 
@@ -797,7 +769,7 @@ Gallery
   border: 0.25rem solid var(--clr-white);
   border-radius: var(--radius);
   -webkit-transition: var(--transition);
-  transition: var(--transition);
+  transition: var(--transition); 
   opacity: 0;
 }
 
@@ -1049,7 +1021,6 @@ Blog
 }
 
 .card-side {
-  -webkit-transition: all .1s linear;
   transition: all .1s linear;
   position: absolute;
   top: 0;
@@ -1152,8 +1123,8 @@ Single Page
 .page-info a {
   text-transform: uppercase;
   color: var(--clr-primary-5);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  /* -webkit-transition: var(--transition);
+  transition: var(--transition); */
 }
 
 .page-info a:hover {
@@ -1232,7 +1203,6 @@ Projects
 .project-footer a {
   text-transform: capitalize;
   color: var(--clr-primary-5);
-  transition: var(--transition);
   justify-self: end;
 }
 
