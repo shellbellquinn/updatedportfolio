@@ -748,7 +748,7 @@ Gallery
   background: var(--clr-primary-5);
   border-radius: var(--radius);
   margin-bottom: 2rem;
-  height: 250px;
+  height: 400px;
 }
 
 .gallery-info {
@@ -780,7 +780,7 @@ Gallery
   height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
-  max-height: 250px;
+  height: 400px;
 }
 
 .gallery:hover .gallery-img {
@@ -827,11 +827,8 @@ Gallery
 
 @media screen and (min-width: 1170px) {
   .gallerys-center {
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 16rem 16rem;
     gap: 1rem;
-    grid-template-areas:
-      "a b b"
-      "a c d";
   }
 
 
@@ -840,24 +837,10 @@ Gallery
   }
 
   .gallery-img {
-    height: 250px;
+    height: 16rem;
   }
 
-  .gallery-1 {
-    grid-area: b;
-  }
-
-  .gallery-2 {
-    grid-area: a;
-  }
-
-  .gallery-3 {
-    grid-area: c;
-  }
-
-  .gallery-4 {
-    grid-area: d;
-  }
+  
 }
 
 /*
@@ -945,7 +928,6 @@ Connect
 =============== 
 Skills
 ===============
-
 */
 @media screen and (min-width: 768px) {
   .skills-center {
