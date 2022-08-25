@@ -780,7 +780,7 @@ Gallery
   height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 400px;
+  height: 16rem;
 }
 
 .gallery:hover .gallery-img {
