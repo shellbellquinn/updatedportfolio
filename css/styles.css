@@ -748,7 +748,7 @@ Gallery
   background: var(--clr-primary-5);
   border-radius: var(--radius);
   margin-bottom: 2rem;
-  height: 400px;
+  height: 16rem;
 }
 
 .gallery-info {
@@ -832,9 +832,6 @@ Gallery
   }
 
 
-  .gallery {
-    height: 100%;
-  }
 
   .gallery-img {
     height: 16rem;
